@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sample3.Controllers.BaseController" Collapsed="true">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\BaseController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProductRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sample3.Controllers.BaseRepository&lt;TObject&gt;">
+    <Position X="6" Y="2.25" Width="2" />
+    <InheritanceLine Type="Sample3.Controllers.ForaDocumentStore" FixedFromPoint="true">
+      <Path>
+        <Point X="8.75" Y="3.688" />
+        <Point X="8" Y="3.688" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAACAgAQACAAEAAAAAAAAAAAAAAggAAAAABAA=</HashCode>
+      <FileName>Controllers\BaseRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sample3.Controllers.ForaDocumentStore">
+    <Position X="8.75" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Controllers\ForaDocumentStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sample3.Controllers.EnvironmentConstants">
+    <Position X="11" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\ForaDocumentStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sample3.Controllers.ProductRepository" Collapsed="true">
+    <Position X="6" Y="7" Width="1.75" />
+    <InheritanceLine Type="Sample3.Controllers.BaseRepository&lt;TObject&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="5.732" />
+        <Point X="7" Y="7" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\ProductRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Sample3.Controllers.IRepository&lt;TObject&gt;">
+    <Position X="11" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAggAAAAABAA=</HashCode>
+      <FileName>Controllers\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,24 @@
+{
+  "Name": "Auto/People/ByAddresses_City",
+  "LockMode": "Unlock",
+  "Map": "from doc in docs.People\r\nfrom docAddressesItem in ((IEnumerable<dynamic>)doc.Addresses).DefaultIfEmpty()\r\nselect new { Addresses_City = docAddressesItem.City }",
+  "Maps": [
+    "from doc in docs.People\r\nfrom docAddressesItem in ((IEnumerable<dynamic>)doc.Addresses).DefaultIfEmpty()\r\nselect new { Addresses_City = docAddressesItem.City }"
+  ],
+  "Reduce": null,
+  "TransformResults": null,
+  "IsMapReduce": false,
+  "IsCompiled": false,
+  "Stores": {},
+  "Indexes": {},
+  "SortOptions": {},
+  "Analyzers": {},
+  "Fields": [],
+  "Suggestions": {},
+  "TermVectors": {},
+  "SpatialIndexes": {},
+  "InternalFieldsMapping": {
+    "Addresses_City": "Addresses,City"
+  },
+  "Type": "Auto"
+}

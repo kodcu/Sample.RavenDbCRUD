@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using Telerik.Web.Mvc.UI
+@using Sample3.Models
+
+<h2>Product</h2>
+
+@model IEnumerable<Product>
+@(Html.Telerik().Grid(Model)
+        .Name("PRODUCTS")
+        .Columns(columns =>
+        {
+            columns.Bound(o => o.Name).Title("Name").Width(80);
+            columns.Bound(o => o.Description).Title("Description").Width(10);
+            columns.Bound(o => o.UnitPrice).Title("UnitPrice").Width(30);
+            columns.Bound(o => o.TotalStock).Title("TotalStock").Width(10);
+            columns.Bound(o => o.CreateDate).Format("{0:MM/dd/yyyy}").Width(60).Title("CreateDate");
+            columns.Bound(o => o.CreateBy).Width(120).Title("CreateBy");
+            columns.Bound(o => o.UpdateDate).Format("{0:MM/dd/yyyy}").Width(60).Title("UpdateDate");
+            columns.Bound(o => o.UpdateBy).Width(120).Title("UpdateBy");
+        })
+        .Groupable()
+        .Sortable()
+        .Pageable()
+        .Filterable()
+) 
